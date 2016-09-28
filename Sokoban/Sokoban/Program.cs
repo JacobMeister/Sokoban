@@ -11,6 +11,7 @@ namespace Sokoban
         static void Main(string[] args)
         {
             //schrijf hier je code
+            //nrpsslik xrlg erl
         }
     }
 }
