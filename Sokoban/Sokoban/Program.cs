@@ -11,6 +11,8 @@ namespace Sokoban
         static void Main(string[] args)
         {
             //schrijf hier je code
+            ReadTextClass rtc = new ReadTextClass();
+            rtc.readTxtFile();
         }
     }
 }
