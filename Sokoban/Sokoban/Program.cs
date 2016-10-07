@@ -12,9 +12,11 @@ namespace Sokoban
         {
             //schrijf hier je code
 
+            ViewController viewController = new ViewController();
+            String level = viewController.startUpScreen();
             ReadTextClass rtc = new ReadTextClass();
-            rtc.readTxtFile();
-
+            rtc.readTxtFile(level);
+            Console.ReadKey();
         }
     }
 }
