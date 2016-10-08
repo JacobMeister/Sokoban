@@ -1,12 +1,10 @@
-﻿
-namespace Model
-{
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
+﻿using System;
+using Model;
+using Sokoban_DomainLib.GeneratedCode.Enumeration;
 
-	public class Game
+namespace Sokoban_DomainLib.GeneratedCode.Model
+{
+    public class Game
 	{
 		public Board Board
 		{
@@ -22,20 +20,116 @@ namespace Model
 
 	    public Bomb[] Bombs { get; set; }
 
-		public bool checkDestinations()
+		public bool CheckDestinations()
 		{
-			throw new System.NotImplementedException();
+		    var destinations = Board.GetDestinations();
+		    foreach (var destination in destinations)
+		    {
+		        if (destination.MoveAbleObject == null) return false;
+		        if (destination.MoveAbleObject is Player)
+		        {
+		            return false;
+		        }
+		    }
+		    return true;
 		}
 
-		public bool checkValidMove(Direction direction)
+		public bool CheckValidMove(Direction direction)
 		{
-			throw new System.NotImplementedException();
+		    switch (direction)
+		    {
+		        case Direction.NORTH:
+		            CheckMoveUp();
+		            break;
+		        case Direction.SOUTH:
+		            CheckMoveDown();
+		            break;
+		        case Direction.EAST:
+		            CheckMoveRight();
+		            break;
+		        case Direction.WEST:
+		            CheckMoveLeft();
+		            break;
+		    }
 		}
 
-		public void DoMove(Direction direction)
+		public void DoMove(Direction direction, bool secondaryMove)
 		{
-			throw new System.NotImplementedException();
+		    switch (direction)
+		    {
+		        case Direction.NORTH:
+                    MoveUp(secondaryMove);
+		            break;
+		        case Direction.SOUTH:
+                    MoveDown(secondaryMove);
+		            break;
+		        case Direction.EAST:
+                    MoveRight(secondaryMove);
+		            break;
+		        case Direction.WEST:
+                    MoveLeft(secondaryMove);
+		            break;
+		    }
 		}
+
+	    private bool CheckMoveUp()
+	    {
+	        
+	    }
+        private bool CheckMoveDown()
+        {
+
+        }
+        private bool CheckMoveLeft()
+        {
+
+        }
+        private bool CheckMoveRight()
+        {
+
+        }
+
+
+	    private void MoveUp(bool secondaryMove)
+	    {
+	        if (secondaryMove)
+	        {
+	            Board.GetFloor(Player.XCoordinate, Player.YCoordinate - 2).MoveAbleObject =
+	                Board.GetFloor(Player.XCoordinate, Player.YCoordinate - 1).MoveAbleObject;
+	        }
+	        Board.GetFloor(Player.XCoordinate, Player.YCoordinate - 1).MoveAbleObject =
+	            Board.GetFloor(Player.XCoordinate, Player.YCoordinate).MoveAbleObject;
+	    }
+        private void MoveDown(bool secondaryMove)
+        {
+            if (secondaryMove)
+            {
+                Board.GetFloor(Player.XCoordinate, Player.YCoordinate + 2).MoveAbleObject =
+                    Board.GetFloor(Player.XCoordinate, Player.YCoordinate + 1).MoveAbleObject;
+            }
+            Board.GetFloor(Player.XCoordinate, Player.YCoordinate + 1).MoveAbleObject =
+                Board.GetFloor(Player.XCoordinate, Player.YCoordinate).MoveAbleObject;
+        }
+        private void MoveRight(bool secondaryMove)
+        {
+            if (secondaryMove)
+            {
+                Board.GetFloor(Player.XCoordinate + 2, Player.YCoordinate).MoveAbleObject =
+                    Board.GetFloor(Player.XCoordinate + 1, Player.YCoordinate).MoveAbleObject;
+            }
+            Board.GetFloor(Player.XCoordinate + 1, Player.YCoordinate + 1).MoveAbleObject =
+                Board.GetFloor(Player.XCoordinate, Player.YCoordinate).MoveAbleObject;
+        }
+        private void MoveLeft(bool secondaryMove)
+        {
+            if (secondaryMove)
+            {
+                Board.GetFloor(Player.XCoordinate - 2, Player.YCoordinate).MoveAbleObject =
+                    Board.GetFloor(Player.XCoordinate - 1, Player.YCoordinate).MoveAbleObject;
+            }
+            Board.GetFloor(Player.XCoordinate - 1, Player.YCoordinate).MoveAbleObject =
+                Board.GetFloor(Player.XCoordinate, Player.YCoordinate).MoveAbleObject;
+        }
 
 	}
 }

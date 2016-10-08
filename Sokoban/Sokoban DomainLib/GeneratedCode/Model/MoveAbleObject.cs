@@ -1,12 +1,8 @@
-﻿
-namespace Model
-{
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
+﻿using Model;
 
-	public abstract class MoveAbleObject
+namespace Sokoban_DomainLib.GeneratedCode.Model
+{
+    public abstract class MoveAbleObject
 	{
 		public int XCoordinate
 		{

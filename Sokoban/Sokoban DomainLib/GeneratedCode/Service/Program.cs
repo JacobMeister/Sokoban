@@ -4,10 +4,12 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using Sokoban_DomainLib.GeneratedCode.Controller;
+
 namespace Service
 {
-	using Controller;
-	using System;
+    using System;
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;

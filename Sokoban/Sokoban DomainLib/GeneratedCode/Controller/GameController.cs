@@ -1,13 +1,9 @@
-﻿
-namespace Controller
-{
-	using Model;
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
+﻿using Model;
+using Sokoban_DomainLib.GeneratedCode.Model;
 
-	public class GameController
+namespace Sokoban_DomainLib.GeneratedCode.Controller
+{
+    public class GameController
 	{
 		public Game Game
 		{

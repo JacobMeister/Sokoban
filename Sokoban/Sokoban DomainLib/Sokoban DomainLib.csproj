@@ -43,10 +43,11 @@
     <Compile Include="GeneratedCode\Controller\GameController.cs" />
     <Compile Include="GeneratedCode\Controller\InputController.cs" />
     <Compile Include="GeneratedCode\Controller\ViewController.cs" />
+    <Compile Include="GeneratedCode\Enumeration\FloorType.cs" />
     <Compile Include="GeneratedCode\Model\Board.cs" />
     <Compile Include="GeneratedCode\Model\Bomb.cs" />
     <Compile Include="GeneratedCode\Model\Destination.cs" />
-    <Compile Include="GeneratedCode\Model\Direction.cs" />
+    <Compile Include="GeneratedCode\Enumeration\Direction.cs" />
     <Compile Include="GeneratedCode\Model\Floor.cs" />
     <Compile Include="GeneratedCode\Model\Game.cs" />
     <Compile Include="GeneratedCode\Model\InvisibleWall.cs" />
@@ -58,6 +59,12 @@
     <Compile Include="GeneratedCode\View\GameView.cs" />
     <Compile Include="GeneratedCode\View\MenuView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sokoban\Sokoban.csproj">
+      <Project>{fdfb3f18-5034-4856-8316-71d997e5b637}</Project>
+      <Name>Sokoban</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
