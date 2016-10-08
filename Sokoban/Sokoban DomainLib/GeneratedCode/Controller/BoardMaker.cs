@@ -12,8 +12,31 @@ namespace Sokoban_DomainLib.GeneratedCode.Controller
         private int _ySize;
         private Char[,] _field;
         private string[] _lines;
-        private Board gameBoard;
+        private Board gameBoard = new Board();
 		
+
+        public void print()
+        {
+            
+
+                for (int i = 0; i < _ySize; i++)
+                {
+                    Console.WriteLine();
+                    for (int j = 0; j < _xSize; j++)
+                    {
+                        Console.Write(_field[i, j]);
+
+                    }
+                }
+
+        }
+
+        public int[] getCoordinates()
+        {
+            int[] coords = { _xSize, _ySize };
+            return coords;
+        }
+        
 
 		public char[,] loadBoard(String mapChooser)
 		{
@@ -36,19 +59,41 @@ namespace Sokoban_DomainLib.GeneratedCode.Controller
         }
 
         
-		public Board createBoard(char[,] textBoard)
+
+        public Board createBoard(char[,] textBoard)
 		{
             
             for (int i = 0; i < _ySize; i++)
             {
-                Console.WriteLine();
+               
                 for (int j = 0; j < _xSize; j++)
                 {
                     char character = textBoard[i, j];
+                    Floor floor = new Model.Floor();
                     switch (character)
                     {
+
                         case '.':
-                            gameBoard[i]
+                            gameBoard.SetFloor(i, j, floor);
+                            break;
+                        case '@':
+                            gameBoard.SetFloor(i, j, floor);
+                            break;
+                        case 'O':
+                            gameBoard.SetFloor(i, j, floor);
+                            break;
+                        case 'X':
+                            Destination dest = new Destination();
+                            gameBoard.SetFloor(i, j, dest);
+                            break;
+                        case '#':
+                            Wall wall = new Model.Wall();
+                            gameBoard.SetFloor(i, j, wall);
+                            break;
+                        case ' ':
+                            InvisibleWall invWall = new InvisibleWall();
+                            gameBoard.SetFloor(i, j, invWall);
+                            break;
 
                         default:
                             break;

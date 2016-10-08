@@ -6,18 +6,22 @@
     //------------------------------------------------------------------------------
     namespace View
     {
-        using System;
-        using System.Collections.Generic;
-        using System.Linq;
-        using System.Media;
-        using System.Text;
+    using Sokoban_DomainLib.GeneratedCode.Controller;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Media;
+    using System.Text;
 
-        public class MenuView
+    public class MenuView
 	    {
             private String _answer;
-            public String showStartUpScreen(bool _intro)
+        private bool _intro;
+
+        public String showStartUpScreen(bool _intro)
             {
-            if (_intro)
+            this._intro = _intro;
+            if (this._intro)
             {
                 introScreens();
             }
@@ -70,20 +74,22 @@
         Console.WriteLine("");
         Console.WriteLine("Press Enter to continue");
         Console.ReadKey();
-    /*
+    
         SoundPlayer player = new SoundPlayer();
         player.SoundLocation = @"C:\Users\User\Source\Repos\Sokoban\Sokoban\Godzilla_Roar.wav";
         player.Play();
 
         Console.Clear();
-        ReadTextClass rtc = new ReadTextClass();
-        rtc.readTxtFile("godzilla");
+        BoardMaker reader = new BoardMaker();
+        reader.loadBoard("godzilla");
+        reader.print();
+
         System.Threading.Thread.Sleep(1000);
         Console.WriteLine("");
         Console.WriteLine("");
         Console.WriteLine("Oh no... It's Godzilla");
         Console.ReadKey();
-        */
+        
 
         Console.Clear();
         Console.WriteLine("There is only one way to stop Godzilla, put bombs under his feet!");
@@ -96,7 +102,7 @@
         Console.WriteLine("");
         Console.WriteLine("Press Enter to continue");
         Console.ReadKey();
-
+            _intro = false;
     }
 
     public void writeMenuText()

@@ -1,6 +1,6 @@
 ﻿namespace Sokoban_DomainLib.GeneratedCode.Model
 {
-    public class Destination
+    public class Destination : Floor
 	{
 	}
 }

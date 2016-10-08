@@ -1,36 +1,30 @@
-﻿using Sokoban_DomainLib.GeneratedCode.Model;
+﻿using Model;
+using Sokoban_DomainLib.GeneratedCode.Model;
 using View;
 
 namespace Sokoban_DomainLib.GeneratedCode.Controller
 {
     public class ViewController
 	{
-		public GameView GameView
-		{
-			get;
-			set;
-		}
+        public GameView GameView = new GameView();
 
-		public MenuView MenuView
-		{
-			get;
-			set;
-		}
-       
-        public Board Board
-        {
-            get;
-            set;
-        }
+
+        public MenuView MenuView = new MenuView();
+
+
+        public Board Board = new Board();
+        
 
         public string showStartUpScreen(bool _intro)
 		{
-           return MenuView.showStartUpScreen(_intro);
+            string chosenLevel = MenuView.showStartUpScreen(_intro);
+            return chosenLevel;
 		}
 
-		public string ShowGameScreen(Board gameBoard)
+		public Direction showGameScreen(Board gameBoard)
 		{
-			throw new System.NotImplementedException();
+            Direction input = GameView.showBoard(gameBoard);
+            return input;
 		}
 
 	}

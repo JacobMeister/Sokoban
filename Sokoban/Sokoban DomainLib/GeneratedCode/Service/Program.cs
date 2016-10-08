@@ -16,6 +16,7 @@ namespace Service
 
 	public class Program
 	{
+        //initializes inputcontroller
         static void Main(string[] args)
         {
           InputController InputController = new InputController();

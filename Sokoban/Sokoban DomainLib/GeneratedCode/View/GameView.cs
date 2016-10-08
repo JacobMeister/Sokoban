@@ -6,13 +6,62 @@
 //------------------------------------------------------------------------------
 namespace View
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
+    using Model;
+    using Sokoban_DomainLib.GeneratedCode.Model;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
 
-	public class GameView
+    public class GameView
 	{
+        public Direction showBoard(Board board)
+        {
+            //for (int i = 0; i < _ySize; i++)
+            //{
+            //    Console.WriteLine();
+            //    for (int j = 0; j < _xSize; j++)
+            //    {
+            //        char character = textBoard[i, j];
+            //        Floor floor = new Model.Floor();
+            //        switch (character)
+            //        {
+
+            //            case '.':
+            //                gameBoard.SetFloor(i, j, floor);
+            //                break;
+            //            case '@':
+            //                gameBoard.SetFloor(i, j, floor);
+            //                break;
+            //            case 'O':
+            //                gameBoard.SetFloor(i, j, floor);
+            //                break;
+            //            case 'X':
+            //                Destination dest = new Destination();
+            //                gameBoard.SetFloor(i, j, dest);
+            //                break;
+            //            case '#':
+            //                Wall wall = new Model.Wall();
+            //                gameBoard.SetFloor(i, j, wall);
+            //                break;
+            //            case ' ':
+            //                InvisibleWall invWall = new InvisibleWall();
+            //                gameBoard.SetFloor(i, j, invWall);
+            //                break;
+
+            //            default:
+            //                break;
+            //        }
+            //    }
+
+
+
+                Console.ReadKey();
+                
+            
+            Direction input = Direction.EAST;
+            return input;
+        }
 	}
 }
 
