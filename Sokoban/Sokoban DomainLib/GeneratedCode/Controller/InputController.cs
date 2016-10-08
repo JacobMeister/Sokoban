@@ -9,6 +9,8 @@ namespace Controller
 
 	public class InputController
 	{
+        private Board gameBoard;
+        private Boolean _intro = true;
 		public GameController GameController
 		{
 			get;
@@ -29,7 +31,10 @@ namespace Controller
 
 		public void startSokoban()
 		{
-			throw new System.NotImplementedException();
+            
+            String levelSelected = ViewController.showStartUpScreen(_intro);
+            char[,] textBoard = BoardMaker.loadBoard(levelSelected);
+            gameBoard = BoardMaker.createBoard(textBoard);
 		}
 
 	}

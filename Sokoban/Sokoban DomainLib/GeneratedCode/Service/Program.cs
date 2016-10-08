@@ -14,11 +14,12 @@ namespace Service
 
 	public class Program
 	{
-		public InputController InputController
-		{
-			get;
-			set;
-		}
+        static void Main(string[] args)
+        {
+          InputController InputController = new InputController();
+        }
+        
+		
 
 	}
 }

@@ -12,13 +12,31 @@ namespace Service
 	using System.Linq;
 	using System.Text;
 
-	public class FileReader
-	{
-		public string[][] loadFromFile()
-		{
-			throw new System.NotImplementedException();
-		}
+    public class FileReader
+    {
+        
+        private int _xSize;
+        private int _ySize;
+        private Char[,] _field;
+        private string[] _lines;
+        public Char[,] loadTextFile(String mapChooser)
+        {
+            _lines = System.IO.File.ReadAllLines(@"C:\Users\User\Source\Repos\Sokoban\Sokoban\Doolhof" + mapChooser + ".txt");
+            _xSize = _lines[0].Length;
+            _ySize = _lines.Length;
+            _field = new Char[_ySize, _xSize];
+            for (int i = 0; i < _ySize; i++)
+            {
+                Char[] _text = _lines[i].ToCharArray();
+                for (int j = 0; j < _xSize; j++)
+                {
+                    _field[i, j] = _text[j];
+                }
+            }
+            return _field;
+        }
+    }
 
-	}
+
 }
 

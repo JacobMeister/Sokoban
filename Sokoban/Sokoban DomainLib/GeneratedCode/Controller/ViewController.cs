@@ -27,9 +27,9 @@
             set;
         }
 
-		public string showStartUpScreen()
+        public string showStartUpScreen(bool _intro)
 		{
-			throw new System.NotImplementedException();
+           return MenuView.showStartUpScreen(_intro);
 		}
 
 		public string ShowGameScreen(Board gameBoard)
