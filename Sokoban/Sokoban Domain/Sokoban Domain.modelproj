@@ -30,6 +30,18 @@
       <SubType>Content</SubType>
       <DependentUpon>Domain.classdiagram</DependentUpon>
     </Content>
+    <Content Include="ModelDefinition\Package1_1027.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_1027.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1000.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1027.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Sokoban Domain.uml">
       <SubType>Content</SubType>
     </Content>
