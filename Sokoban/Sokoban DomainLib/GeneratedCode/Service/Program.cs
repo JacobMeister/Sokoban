@@ -14,7 +14,7 @@ namespace Service
 
 	public class Program
 	{
-		public virtual InputController InputController
+		public InputController InputController
 		{
 			get;
 			set;

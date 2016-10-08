@@ -14,7 +14,7 @@ namespace Service
 
 	public class FileReader
 	{
-		public virtual string[][] loadFromFile()
+		public string[][] loadFromFile()
 		{
 			throw new System.NotImplementedException();
 		}
