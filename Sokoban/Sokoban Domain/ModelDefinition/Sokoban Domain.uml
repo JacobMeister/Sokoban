@@ -3,6 +3,88 @@
   dslVersion="1.0.0.0"
   Id="ba60732a-451e-4aee-b786-32ae30534f9f"
   name="Sokoban Domain" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="83259c9d-4e13-4d09-82a4-87aba95dc5bd"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="52937be0-2994-427c-8b7d-7595fc01b3ed">
+          <propertyInstance
+            Id="1ca3cbb7-08bc-4cce-94b4-e47333ecb69f"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="21dec0e8-f1be-4848-a8f3-41ddb1c872f3">
+          <propertyInstance
+            Id="aae3aa91-2cc9-4ede-8b03-f26e69d1bf68"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="72b7b506-b7cb-4b6d-9929-5170f086b8aa">
+          <propertyInstance
+            Id="4e7843e5-5aae-42d8-bcea-45b79a5e0c5f"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance
+      Id="31e11382-c89b-47a5-99bb-f24744365609"
+      name="TextTemplateBindings"
+      profile="TextTemplateBindings">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="ca42cf09-07a2-4eaf-98ea-b9c83205428c">
+          <propertyInstance
+            Id="3e04ad87-7098-41d7-b230-d406d650a07c"
+            name="Alias"
+            value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="a37e1182-63f9-44bf-a167-de894a0c212a">
+          <propertyInstance
+            Id="79a93787-764d-45fb-a019-6a158d902af6"
+            name="TemplateFilePath"
+            value="ClassTemplate=D:\SCHOOL\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=D:\SCHOOL\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=D:\SCHOOL\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=D:\SCHOOL\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="94da061f-3eb0-4a75-9530-3c67c738faaf">
+          <propertyInstance
+            Id="dad617fa-af82-46eb-a92a-69a8f8fa69b6"
+            name="ProjectPath"
+            value="ClassTemplate=..\Sokoban DomainLib\Sokoban DomainLib.csproj|EnumTemplate=..\Sokoban DomainLib\Sokoban DomainLib.csproj|InterfaceTemplate=..\Sokoban DomainLib\Sokoban DomainLib.csproj|StructTemplate=..\Sokoban DomainLib\Sokoban DomainLib.csproj" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="8b5dacea-33b0-427d-9fc6-3f5ec923803d">
+          <propertyInstance
+            Id="e895450b-9399-4d55-8988-ca1075b96f6e"
+            name="TargetDirectory"
+            value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="8d3fde81-aed6-4901-b750-c7f881a4541a">
+          <propertyInstance
+            Id="3abf8674-9c5b-421b-b21b-e5247bc53a17"
+            name="TargetName"
+            value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="dc64e219-5fd0-4061-8cde-c9d79a21aa60">
+          <propertyInstance
+            Id="a206643e-0207-4dc2-b41c-ac3ddfd95506"
+            name="Overwrite"
+            value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="d0543c29-70a9-4ad1-a101-54c1f9689d68">
+          <propertyInstance
+            Id="45aae2b6-c426-4a7e-acd4-69301c92a724"
+            name="Parameters" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -16,12 +98,24 @@
         Id="532ea607-fb19-44b8-8502-3351b05452be"
         name="StandardProfileL3" />
     </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="c2d4ed59-7e7b-4fae-a962-b0384a138c1d">
+      <profileInstance
+        Id="38e210a5-f94a-4059-a1d0-defe334654e8"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="2e11582f-1d15-495c-b10b-415025b2fdcd">
+      <profileInstance
+        Id="9db932ea-d83c-4661-821e-70fa25b09c30"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <packageMoniker
         Id="ddd89e04-2899-43e3-a936-3def85c9a7ba"
-        LastKnownName="0"
+        LastKnownName="Model"
         LastKnownLocation="Package_1000.uml" />
     </packageHasNamedElement>
     <packageHasNamedElement>

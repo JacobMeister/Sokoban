@@ -10,7 +10,51 @@
         name="MenuView"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="eb3f213a-0c2c-4363-8d7f-ba16a64eb701"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="530a23b8-3474-4e80-b4cc-3d4896c5813e">
+                <propertyInstance
+                  Id="823dd909-2ed7-4dee-8680-ad34670368ab"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="498184fc-7bbc-40ce-8de6-71891862d72a">
+                <propertyInstance
+                  Id="24332619-6e3b-4ec7-9717-ad3942d1d76e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="485d1d3b-a97b-4421-a1ab-b26b49bc40a9">
+                <propertyInstance
+                  Id="201bec93-46c9-4e79-9b92-32e3bf124ff6"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f2b71f6e-7032-4356-ac76-387c00d91228">
+                <propertyInstance
+                  Id="f21da140-b95e-4d40-92fa-5f5953da4e09"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6bbc4c82-3f61-44b8-b508-d8bbd8931cd8">
+                <propertyInstance
+                  Id="d658ff7c-e158-433c-9d4e-c7fdc944a80f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -18,7 +62,51 @@
         name="GameView"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6d7edbc7-41ab-48ec-b187-e08b8ad877a7"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="413aaf5f-730d-422b-a4fb-024e4468576e">
+                <propertyInstance
+                  Id="ffeb8372-095d-4966-9df5-b7c685165c99"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="de7a78d1-d6e5-4084-9a62-a53b9bc63976">
+                <propertyInstance
+                  Id="9d7f636d-6159-41bd-8e6b-0803af1d7c98"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1d85b698-eb77-4a9a-a4e5-eabc0a6fbb8c">
+                <propertyInstance
+                  Id="9b15a413-1a14-4bcb-89d3-23b9d74f434c"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5b73b08b-5aa9-43c9-a530-eb0743ac2036">
+                <propertyInstance
+                  Id="9aa97d8b-7ba4-4d98-b017-91349a5cd635"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="254c03a4-9ac5-4962-9804-7108ba7e8fc1">
+                <propertyInstance
+                  Id="0ea01174-e668-4549-a0df-186acbccba9c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
 </package>

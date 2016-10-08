@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sokoban", "Sokoban\Sokoban.csproj", "{FDFB3F18-5034-4856-8316-71D997E5B637}"
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Sokoban Domain", "Sokoban Domain\Sokoban Domain.modelproj", "{CE86EE95-9D61-4259-B775-423518109CE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sokoban DomainLib", "Sokoban DomainLib\Sokoban DomainLib.csproj", "{2C0572CD-EE8A-44EF-8541-B592DCB05BD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CE86EE95-9D61-4259-B775-423518109CE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE86EE95-9D61-4259-B775-423518109CE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE86EE95-9D61-4259-B775-423518109CE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0572CD-EE8A-44EF-8541-B592DCB05BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0572CD-EE8A-44EF-8541-B592DCB05BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0572CD-EE8A-44EF-8541-B592DCB05BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0572CD-EE8A-44EF-8541-B592DCB05BD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
