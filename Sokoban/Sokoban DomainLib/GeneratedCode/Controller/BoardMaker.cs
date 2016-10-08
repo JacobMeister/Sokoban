@@ -1,14 +1,11 @@
 ﻿
 
-namespace Controller
-{
-    using Model;
-    using Service;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
+using System;
+using Service;
+using Sokoban_DomainLib.GeneratedCode.Model;
 
+namespace Sokoban_DomainLib.GeneratedCode.Controller
+{
     public class BoardMaker
 	{
         private int _xSize;

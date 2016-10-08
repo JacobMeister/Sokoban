@@ -1,12 +1,6 @@
-﻿
-namespace Model
+﻿namespace Sokoban_DomainLib.GeneratedCode.Model
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
-
-	public class Wall : Floor
+    public class Wall : Floor
 	{
 	}
 }

@@ -1,12 +1,8 @@
-﻿
-namespace Model
-{
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
+﻿using Model;
 
-	public class Bomb : MoveAbleObject
+namespace Sokoban_DomainLib.GeneratedCode.Model
+{
+    public class Bomb : MoveAbleObject
 	{
 	}
 }

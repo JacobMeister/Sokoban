@@ -1,12 +1,9 @@
-﻿
-namespace Model
-{
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
+﻿using Model;
+using Sokoban_DomainLib.GeneratedCode.Enumeration;
 
-	public class Floor
+namespace Sokoban_DomainLib.GeneratedCode.Model
+{
+    public class Floor
 	{
 		public int XCoordinate
 		{
@@ -19,6 +16,8 @@ namespace Model
 			get;
 			set;
 		}
+
+	    public FloorType FloorType { get; set; }
 
 		public MoveAbleObject MoveAbleObject
 		{

@@ -1,13 +1,6 @@
-﻿
-namespace Controller
+﻿namespace Sokoban_DomainLib.GeneratedCode.Controller
 {
-	using Model;
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
-
-	public class InputController
+    public class InputController
 	{
         private Board gameBoard;
         private Boolean _intro = true;
