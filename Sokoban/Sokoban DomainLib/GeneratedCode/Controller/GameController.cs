@@ -19,12 +19,14 @@ namespace Sokoban_DomainLib.GeneratedCode.Controller
             
 		}
 
-        //public Boolean checkDestinations()
-        //{
-        //    Boolean won = Game.CheckDestinations();
-        //    return won;
-        //}
 
-	}
+
+        public Boolean checkDestinations()
+        {
+            Boolean won = Game.CheckDestinations();
+            return won;
+        }
+
+    }
 }
 

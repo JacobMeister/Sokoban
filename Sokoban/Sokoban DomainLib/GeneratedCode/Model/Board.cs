@@ -28,11 +28,11 @@ namespace Sokoban_DomainLib.GeneratedCode.Model
             
         }
 
-        //public Floor[] GetDestinations()
-        //{
-        //    var returnList = (from floors in GameBoard from floor in floors where floor.FloorType == FloorType.DESTINATION select floor).ToList();
-        //    return returnList.ToArray();
-        //}
+        public Floor[] GetDestinations()
+        {
+            var returnList = (from floors in GameBoard from floor in floors where floor.FloorType == FloorType.DESTINATION select floor).ToList();
+            return returnList.ToArray();
+        }
     }
 }
 

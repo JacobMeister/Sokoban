@@ -20,40 +20,40 @@ namespace Sokoban_DomainLib.GeneratedCode.Model
 
 	    public Bomb[] Bombs { get; set; }
 
-		//public bool CheckDestinations()
-		//{
-		//    var destinations = Board.GetDestinations();
-		//    foreach (var destination in destinations)
-		//    {
-		//        if (destination.MoveAbleObject == null) return false;
-		//        if (destination.MoveAbleObject is Player)
-		//        {
-		//            return false;
-		//        }
-		//    }
-		//    return true;
-		//}
+        public bool CheckDestinations()
+        {
+            var destinations = Board.GetDestinations();
+            foreach (var destination in destinations)
+            {
+                if (destination.MoveAbleObject == null) return false;
+                if (destination.MoveAbleObject is Player)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
 
-		//public bool CheckValidMove(Direction direction)
-		//{
-		//    switch (direction)
-		//    {
-		//        case Direction.NORTH:
-		//            CheckMoveUp();
-		//            break;
-		//        case Direction.SOUTH:
-		//            CheckMoveDown();
-		//            break;
-		//        case Direction.EAST:
-		//            CheckMoveRight();
-		//            break;
-		//        case Direction.WEST:
-		//            CheckMoveLeft();
-		//            break;
-		//    }
-		//}
+        //public bool CheckValidMove(Direction direction)
+        //{
+        //    switch (direction)
+        //    {
+        //        case Direction.NORTH:
+        //            CheckMoveUp();
+        //            break;
+        //        case Direction.SOUTH:
+        //            CheckMoveDown();
+        //            break;
+        //        case Direction.EAST:
+        //            CheckMoveRight();
+        //            break;
+        //        case Direction.WEST:
+        //            CheckMoveLeft();
+        //            break;
+        //    }
+        //}
 
-		public void DoMove(Direction direction, bool secondaryMove)
+        public void DoMove(Direction direction, bool secondaryMove)
 		{
 		    switch (direction)
 		    {

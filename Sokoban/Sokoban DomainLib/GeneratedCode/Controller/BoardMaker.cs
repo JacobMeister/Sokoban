@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 using Service;
 using Sokoban_DomainLib.GeneratedCode.Model;
 
@@ -13,6 +11,7 @@ namespace Sokoban_DomainLib.GeneratedCode.Controller
         private Char[,] _field;
         private string[] _lines;
         private Board gameBoard = new Board();
+        private GameController gameController = new GameController();
 		
 
         public void print()
@@ -77,9 +76,19 @@ namespace Sokoban_DomainLib.GeneratedCode.Controller
                             gameBoard.SetFloor(i, j, floor);
                             break;
                         case '@':
+                            Player player = new Player();
+                            player.XCoordinate = i;
+                            player.YCoordinate = i;
+                            floor.setMovableObject(player);
                             gameBoard.SetFloor(i, j, floor);
+
+
                             break;
                         case 'O':
+                            Bomb bomb = new Model.Bomb();
+                            bomb.XCoordinate = i;
+                            bomb.YCoordinate = i;
+                            floor.setMovableObject(bomb);
                             gameBoard.SetFloor(i, j, floor);
                             break;
                         case 'X':

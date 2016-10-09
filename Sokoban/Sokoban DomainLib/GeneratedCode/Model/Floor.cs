@@ -19,11 +19,17 @@ namespace Sokoban_DomainLib.GeneratedCode.Model
 
 	    public FloorType FloorType { get; set; }
 
-		public MoveAbleObject MoveAbleObject
-		{
-			get;
-			set;
-		}
+        public MoveAbleObject MoveAbleObject;
+
+        public MoveAbleObject getMovableObject()
+        {
+            return MoveAbleObject;
+        }
+		
+        public void setMovableObject(MoveAbleObject moveableObject)
+        {
+            this.MoveAbleObject = moveableObject;
+        }
 
 	}
 }

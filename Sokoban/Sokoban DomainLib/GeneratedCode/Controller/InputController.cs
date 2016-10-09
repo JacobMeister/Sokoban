@@ -39,7 +39,7 @@ namespace Sokoban_DomainLib.GeneratedCode.Controller
                 Direction direction = ViewController.showGameScreen(gameBoard);
                 GameController.movePlayer(direction);
 
-                //won = GameController.checkDestinations();
+                won = GameController.checkDestinations();
             }
 		}
 
