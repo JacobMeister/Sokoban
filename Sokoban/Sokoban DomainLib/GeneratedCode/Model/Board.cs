@@ -8,11 +8,14 @@ namespace Sokoban_DomainLib.GeneratedCode.Model
     public class Board
     {
         public Floor[,] GameBoard;
+        private int x;
+        private int y;
+
         public void initFloor(int[] coords)
 
         {
-            int x = coords[0];
-            int y = coords[1];
+            x = coords[0];
+            y = coords[1];
             GameBoard = new Floor[x,y];
         }
        
@@ -30,6 +33,11 @@ namespace Sokoban_DomainLib.GeneratedCode.Model
 
         public Floor[] GetDestinations()
         {
+            
+
+
+
+
             var returnList = (from floors in GameBoard from floor in floors where floor.FloorType == FloorType.DESTINATION select floor).ToList();
             return returnList.ToArray();
         }

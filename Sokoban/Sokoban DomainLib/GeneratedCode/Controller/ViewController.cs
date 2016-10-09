@@ -1,5 +1,6 @@
 ﻿using Model;
 using Sokoban_DomainLib.GeneratedCode.Model;
+using System;
 using View;
 
 namespace Sokoban_DomainLib.GeneratedCode.Controller
@@ -21,9 +22,9 @@ namespace Sokoban_DomainLib.GeneratedCode.Controller
             return chosenLevel;
 		}
 
-		public Direction showGameScreen(Board gameBoard)
+		public String showGameScreen(Board gameBoard)
 		{
-            Direction input = GameView.showBoard(gameBoard);
+            String input = GameView.showBoard(gameBoard);
             return input;
 		}
 

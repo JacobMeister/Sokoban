@@ -10,7 +10,7 @@ namespace View
 
     public class GameView
 	{
-        public Direction showBoard(Board gameBoard)
+        public String showBoard(Board gameBoard)
         {
             
             Console.Clear();
@@ -53,11 +53,46 @@ namespace View
                 }
 
 
+            String input = "";
+            bool rightAnswer = false;
 
-                Console.ReadKey();
-                
+            while (rightAnswer == false)
+            {
+                ConsoleKeyInfo result = Console.ReadKey();
+                if ((result.KeyChar == 'r'))
+                {
+                    input = "r";
+                    rightAnswer = true;
+                }
+                else if ((result.KeyChar == 's'))
+                {
+                    input = "s";
+                    rightAnswer = true;
+                }
+                else if ((result.KeyChar == (char)ConsoleKey.LeftArrow))
+                {
+                    input = "left";
+                    rightAnswer = true;
+                }
+                else if ((result.KeyChar == (char)ConsoleKey.RightArrow))
+                {
+                    input = "right";
+                    rightAnswer = true;
+                }
+                else if ((result.KeyChar == (char)ConsoleKey.UpArrow))
+                {
+                    input = "up";
+                    rightAnswer = true;
+                }
+                else if ((result.KeyChar == (char)ConsoleKey.DownArrow))
+                {
+                    input = "down";
+                    rightAnswer = true;
+                }
+            }
+
+
             
-            Direction input = Direction.EAST;
             return input;
         }
 	}

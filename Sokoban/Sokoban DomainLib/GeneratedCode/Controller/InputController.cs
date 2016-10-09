@@ -36,7 +36,32 @@ namespace Sokoban_DomainLib.GeneratedCode.Controller
             while (won == false)
             {
                 
-                Direction direction = ViewController.showGameScreen(gameBoard);
+                String input = ViewController.showGameScreen(gameBoard);
+                Direction direction = Direction.EAST;
+                switch (input)
+                {
+                    case "s":
+
+                        break;
+
+                    case "r":
+
+                        break;
+
+                    case "up":
+                        direction = Direction.NORTH;
+                        break;
+                    case "down":
+                        direction = Direction.SOUTH;
+                        break;
+                    case "left":
+                        direction = Direction.WEST;
+                        break;
+                    case "right":
+                        direction = Direction.EAST;
+                        break;
+                }
+
                 GameController.movePlayer(direction);
 
                 won = GameController.checkDestinations();
